@@ -1,0 +1,27 @@
+.fifth__section {
+  padding-bottom: 5rem;
+  background-color: var(--base-color-3);
+
+  .fifth__section-grid {
+    background-color: inherit;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-items: center;
+    gap: 5rem;
+
+    img {
+      height: auto;
+      max-width: 100%;
+      margin: 1rem;
+    }
+  }
+
+  .fifth__section-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+    margin: 2rem;
+  }
+}

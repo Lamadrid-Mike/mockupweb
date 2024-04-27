@@ -1,0 +1,22 @@
+.third__section {
+  padding: 1rem;
+  background-color: var(--base-color-3);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+  img {
+    height: auto;
+    max-width: 400px;
+  }
+
+  .third__section-intro {
+    padding: 40px;
+  }
+
+  button {
+    margin-left: 40px;
+    margin-bottom: 40px;
+  }
+}

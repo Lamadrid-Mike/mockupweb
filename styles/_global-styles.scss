@@ -1,0 +1,70 @@
+//global styles
+.header-style {
+  font-size: 8rem;
+  font-weight: 100;
+  padding: 40px;
+}
+
+.p-style {
+  font-size: 1.9rem;
+  font-weight: 100;
+}
+
+.span-style {
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+.btn-main-style {
+  margin-top: 25px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--base-color-2);
+  padding: 14px 28px;
+  font-family: inherit;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  transition: all 0.5s;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.5s;
+  }
+}
+
+.p-style-services {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.h3-style-services {
+  font-size: 2.5rem;
+  font-family: inherit;
+  font-weight: 200;
+  padding: 1rem;
+}
+
+.bold-style {
+  font-size: 2.2rem;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+//mobile view
+@media screen and (max-width: 768px) {
+  .header-style {
+    font-size: 5rem;
+    font-weight: 100;
+    padding: 0;
+  }
+
+  .p-style {
+    font-size: 16px;
+  }
+
+  .span-style {
+    font-size: 16px;
+  }
+}
