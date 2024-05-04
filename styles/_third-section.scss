@@ -4,11 +4,12 @@
   display: grid;
   justify-items: center;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
   img {
     height: auto;
     max-width: 400px;
+    width: 100%;
   }
 
   .third__section-intro {

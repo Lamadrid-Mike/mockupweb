@@ -4,7 +4,8 @@
   color: white;
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   overflow: hidden;
   background-color: var(--base-color);
 
@@ -22,7 +23,7 @@
   }
 
   .first__section-image {
-    max-width: 500px;
+    max-width: 400px;
     height: auto;
     background-size: cover;
     background-repeat: no-repeat;
@@ -32,6 +33,6 @@
 
 @media screen and (max-width: 768px) {
   .first__section {
-    height: 100vh;
+    height: auto;
   }
 }

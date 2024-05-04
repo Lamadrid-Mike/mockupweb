@@ -17,3 +17,17 @@ const closeNav = function () {
 
 openBtn.addEventListener("click", openNav);
 closeBtn.addEventListener("click", closeNav);
+
+//fade-in element effects
+const elements = Array.from(document.querySelector(".third__section").children);
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((element) => {
+    const intersecting = element.isIntersecting;
+    console.log(element.target.classList);
+  });
+});
+
+elements.forEach((el) => {
+  observer.observe(el);
+});
