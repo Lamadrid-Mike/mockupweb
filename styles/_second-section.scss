@@ -8,14 +8,14 @@
 
   .second__section-header {
     opacity: 0;
-    animation: fade-in-left 1.2s ease-in forwards;
+    animation: fade-in-left 1.5s forwards;
     transform: translateX(-10px);
   }
 
   .second__section-p {
     padding: 40px;
     transform: translateX(10px);
-    animation: fade-in-right 1.2s ease-in forwards;
+    animation: fade-in-right 1.5s forwards;
     opacity: 0;
   }
 }

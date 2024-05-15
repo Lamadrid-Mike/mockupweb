@@ -1,0 +1,31 @@
+@keyframes left-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+
+  100% {
+    opacity: 100;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes right-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+
+  100% {
+    opacity: 100;
+    transform: translateX(0px);
+  }
+}
+
+.right__fade-in {
+  animation: right-fade-in 1.5s forwards;
+}
+
+.left__fade-in {
+  animation: left-fade-in 1.5s forwards;
+}

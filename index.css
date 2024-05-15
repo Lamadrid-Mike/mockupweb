@@ -144,13 +144,13 @@ body {
 }
 .second__section .second__section-header {
   opacity: 0;
-  animation: fade-in-left 1.2s ease-in forwards;
+  animation: fade-in-left 1.5s forwards;
   transform: translateX(-10px);
 }
 .second__section .second__section-p {
   padding: 40px;
   transform: translateX(10px);
-  animation: fade-in-right 1.2s ease-in forwards;
+  animation: fade-in-right 1.5s forwards;
   opacity: 0;
 }
 
@@ -349,4 +349,31 @@ footer .footer__social h2 {
   .footer__section {
     flex-direction: column;
   }
+}
+@keyframes left-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  100% {
+    opacity: 100;
+    transform: translateX(0px);
+  }
+}
+@keyframes right-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+  100% {
+    opacity: 100;
+    transform: translateX(0px);
+  }
+}
+.right__fade-in {
+  animation: right-fade-in 1.5s forwards;
+}
+
+.left__fade-in {
+  animation: left-fade-in 1.5s forwards;
 }/*# sourceMappingURL=index.css.map */

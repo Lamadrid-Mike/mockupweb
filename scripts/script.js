@@ -18,13 +18,21 @@ const closeNav = function () {
 openBtn.addEventListener("click", openNav);
 closeBtn.addEventListener("click", closeNav);
 
-//fade-in element effects
-const elements = Array.from(document.querySelector(".third__section").children);
+//fade-in animation
+const elements = Array.from(document.querySelectorAll(".fade-effect"));
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((element) => {
     const intersecting = element.isIntersecting;
-    console.log(element.target.classList);
+    if (intersecting) {
+      if (element.target.classList.contains("right")) {
+        element.target.classList.add("right__fade-in");
+      }
+
+      if (element.target.classList.contains("left")) {
+        element.target.classList.add("left__fade-in");
+      }
+    }
   });
 });
 
